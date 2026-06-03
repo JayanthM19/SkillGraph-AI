@@ -1,0 +1,21 @@
+Python is essential for machine learning and AI development.
+
+NumPy is used for numerical computing in Python.
+
+Pandas is used for data analysis and data manipulation.
+
+Machine Learning is a subset of AI focused on learning from data.
+
+Deep Learning uses neural networks with multiple layers.
+
+CNNs are commonly used for computer vision tasks.
+
+Transformers are powerful architectures used in NLP and modern AI systems.
+
+RAG combines retrieval systems with language models.
+
+Vector databases store embeddings for semantic retrieval.
+
+LangChain helps build LLM applications.
+
+LangGraph is used for multi-agent AI workflows.
