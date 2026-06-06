@@ -1,0 +1,15 @@
+source,target,relationship
+Python,NumPy,PREREQUISITE_FOR
+Python,Pandas,PREREQUISITE_FOR
+NumPy,Machine Learning,PREREQUISITE_FOR
+Pandas,Machine Learning,PREREQUISITE_FOR
+Machine Learning,Deep Learning,PREREQUISITE_FOR
+Deep Learning,CNN,PREREQUISITE_FOR
+Deep Learning,RNN,PREREQUISITE_FOR
+Deep Learning,Transformers,PREREQUISITE_FOR
+Transformers,RAG,PREREQUISITE_FOR
+RAG,LangChain,USES
+LangChain,LangGraph,EXTENDS
+CNN,Computer Vision,SPECIALIZATION
+RNN,NLP,SPECIALIZATION
+Transformers,NLP,SPECIALIZATION
