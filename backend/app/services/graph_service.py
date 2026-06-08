@@ -4,9 +4,10 @@ from backend.app.graphrag.neo4j_connection import driver
 def get_next_skills(skill_name: str):
 
     query = """
-    MATCH (s:Skill {name:$skill})
-    -[:PREREQUISITE_FOR]->
-    (next)
+    MATCH (s:Skill)
+    WHERE toLower(s.name) = toLower($skill)
+
+    MATCH (s)-[:PREREQUISITE_FOR]->(next)
 
     RETURN next.name AS skill
     """
