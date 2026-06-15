@@ -4,6 +4,9 @@ from backend.app.api.graph import (
     router as graph_router
 )
 
+from backend.app.api.hybrid import (
+    router as hybrid_router
+)
 
 app = FastAPI(
     title="SkillGraph AI",
@@ -13,6 +16,7 @@ app = FastAPI(
 
 app.include_router(search_router)
 app.include_router(graph_router)
+app.include_router(hybrid_router)
 @app.get("/")
 def home():
     return {
