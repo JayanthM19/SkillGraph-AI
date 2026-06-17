@@ -1,5 +1,7 @@
 from backend.app.graphrag.neo4j_connection import driver
-
+from backend.app.services.gemini_service import (
+    generate_response
+)
 
 def skill_gap_analysis(known_skills):
 
@@ -28,3 +30,32 @@ def skill_gap_analysis(known_skills):
     )
 
     return missing_skills
+
+def generate_career_roadmap(
+    known_skills,
+    target_role,
+    missing_skills
+):
+
+    prompt = f"""
+    User knows:
+
+    {known_skills}
+
+    User wants to become:
+
+    {target_role}
+
+    Missing skills:
+
+    {missing_skills}
+
+    Create:
+
+    1. Skill gap analysis
+    2. Recommended learning order
+    3. 3-month roadmap
+    4. Beginner-friendly explanation
+    """
+
+    return generate_response(prompt)
