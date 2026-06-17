@@ -1,0 +1,152 @@
+source,target,relationship
+Programming Fundamentals,C,PREREQUISITE_FOR
+Programming Fundamentals,Python,PREREQUISITE_FOR
+Programming Fundamentals,Java,PREREQUISITE_FOR
+Programming Fundamentals,C++,PREREQUISITE_FOR
+Programming Fundamentals,JavaScript,PREREQUISITE_FOR
+
+Python,NumPy,PREREQUISITE_FOR
+Python,Pandas,PREREQUISITE_FOR
+Python,Matplotlib,PREREQUISITE_FOR
+Python,Scikit-Learn,PREREQUISITE_FOR
+Python,FastAPI,PREREQUISITE_FOR
+Python,Django,PREREQUISITE_FOR
+
+NumPy,Pandas,PREREQUISITE_FOR
+Pandas,EDA,PREREQUISITE_FOR
+EDA,Statistics,PREREQUISITE_FOR
+Statistics,Probability,PREREQUISITE_FOR
+Probability,Machine Learning,PREREQUISITE_FOR
+
+Machine Learning,Regression,PREREQUISITE_FOR
+Machine Learning,Classification,PREREQUISITE_FOR
+Machine Learning,Feature Engineering,PREREQUISITE_FOR
+Machine Learning,Model Evaluation,PREREQUISITE_FOR
+Machine Learning,Scikit-Learn,PREREQUISITE_FOR
+Machine Learning,XGBoost,PREREQUISITE_FOR
+Machine Learning,Ensemble Learning,PREREQUISITE_FOR
+
+Machine Learning,Deep Learning,PREREQUISITE_FOR
+
+Deep Learning,Neural Networks,PREREQUISITE_FOR
+Neural Networks,CNN,PREREQUISITE_FOR
+Neural Networks,RNN,PREREQUISITE_FOR
+Neural Networks,LSTM,PREREQUISITE_FOR
+Deep Learning,TensorFlow,PREREQUISITE_FOR
+Deep Learning,PyTorch,PREREQUISITE_FOR
+
+CNN,Computer Vision,PREREQUISITE_FOR
+Computer Vision,YOLO,PREREQUISITE_FOR
+Computer Vision,Object Detection,PREREQUISITE_FOR
+Computer Vision,Image Segmentation,PREREQUISITE_FOR
+
+RNN,NLP,PREREQUISITE_FOR
+LSTM,NLP,PREREQUISITE_FOR
+
+NLP,Transformers,PREREQUISITE_FOR
+Transformers,BERT,PREREQUISITE_FOR
+Transformers,GPT,PREREQUISITE_FOR
+Transformers,Embeddings,PREREQUISITE_FOR
+
+Embeddings,Vector Databases,PREREQUISITE_FOR
+Vector Databases,ChromaDB,PREREQUISITE_FOR
+Vector Databases,FAISS,PREREQUISITE_FOR
+Vector Databases,Pinecone,PREREQUISITE_FOR
+
+Embeddings,RAG,PREREQUISITE_FOR
+RAG,LangChain,PREREQUISITE_FOR
+LangChain,LangGraph,PREREQUISITE_FOR
+RAG,GraphRAG,PREREQUISITE_FOR
+GraphRAG,Agentic AI,PREREQUISITE_FOR
+
+JavaScript,HTML,PREREQUISITE_FOR
+JavaScript,CSS,PREREQUISITE_FOR
+HTML,Frontend Development,PREREQUISITE_FOR
+CSS,Frontend Development,PREREQUISITE_FOR
+
+Frontend Development,React,PREREQUISITE_FOR
+React,Next.js,PREREQUISITE_FOR
+React,Redux,PREREQUISITE_FOR
+Next.js,Full Stack Development,PREREQUISITE_FOR
+
+SQL,MySQL,PREREQUISITE_FOR
+SQL,PostgreSQL,PREREQUISITE_FOR
+SQL,Database Design,PREREQUISITE_FOR
+Database Design,Backend Development,PREREQUISITE_FOR
+
+Java,Spring Boot,PREREQUISITE_FOR
+Spring Boot,Backend Development,PREREQUISITE_FOR
+
+Python,Backend Development,PREREQUISITE_FOR
+Backend Development,REST APIs,PREREQUISITE_FOR
+REST APIs,Microservices,PREREQUISITE_FOR
+Microservices,System Design,PREREQUISITE_FOR
+
+Git,GitHub,PREREQUISITE_FOR
+GitHub,CI/CD,PREREQUISITE_FOR
+
+Linux,Docker,PREREQUISITE_FOR
+Docker,Kubernetes,PREREQUISITE_FOR
+Docker,Containerization,PREREQUISITE_FOR
+Containerization,Kubernetes,PREREQUISITE_FOR
+
+CI/CD,Jenkins,PREREQUISITE_FOR
+CI/CD,GitHub Actions,PREREQUISITE_FOR
+
+Linux,AWS,PREREQUISITE_FOR
+Linux,Azure,PREREQUISITE_FOR
+Linux,GCP,PREREQUISITE_FOR
+
+AWS,Cloud Computing,PREREQUISITE_FOR
+Azure,Cloud Computing,PREREQUISITE_FOR
+GCP,Cloud Computing,PREREQUISITE_FOR
+
+Cloud Computing,DevOps,PREREQUISITE_FOR
+DevOps,Monitoring,PREREQUISITE_FOR
+Monitoring,Prometheus,PREREQUISITE_FOR
+Monitoring,Grafana,PREREQUISITE_FOR
+
+C,Data Structures,PREREQUISITE_FOR
+Java,Data Structures,PREREQUISITE_FOR
+Python,Data Structures,PREREQUISITE_FOR
+
+Data Structures,Algorithms,PREREQUISITE_FOR
+Algorithms,Competitive Programming,PREREQUISITE_FOR
+Algorithms,System Design,PREREQUISITE_FOR
+
+C,Embedded C,PREREQUISITE_FOR
+Embedded C,Microcontrollers,PREREQUISITE_FOR
+Microcontrollers,Arduino,PREREQUISITE_FOR
+Microcontrollers,ESP32,PREREQUISITE_FOR
+
+Arduino,IoT,PREREQUISITE_FOR
+ESP32,IoT,PREREQUISITE_FOR
+
+IoT,Sensors,PREREQUISITE_FOR
+IoT,MQTT,PREREQUISITE_FOR
+MQTT,Edge Computing,PREREQUISITE_FOR
+
+Sensors,DHT11,PREREQUISITE_FOR
+Sensors,PIR Sensor,PREREQUISITE_FOR
+Sensors,Soil Moisture Sensor,PREREQUISITE_FOR
+
+Raspberry Pi,Edge Computing,PREREQUISITE_FOR
+Edge Computing,IoT Solutions,PREREQUISITE_FOR
+
+Operating Systems,Computer Networks,PREREQUISITE_FOR
+Computer Networks,Cybersecurity,PREREQUISITE_FOR
+Linux,Cybersecurity,PREREQUISITE_FOR
+Cybersecurity,Ethical Hacking,PREREQUISITE_FOR
+
+Statistics,Data Science,PREREQUISITE_FOR
+Machine Learning,Data Science,PREREQUISITE_FOR
+Data Science,MLOps,PREREQUISITE_FOR
+
+MLOps,MLflow,PREREQUISITE_FOR
+MLOps,Model Deployment,PREREQUISITE_FOR
+Model Deployment,FastAPI,PREREQUISITE_FOR
+FastAPI,Production AI Systems,PREREQUISITE_FOR
+
+Agentic AI,Multi-Agent Systems,PREREQUISITE_FOR
+LangGraph,Multi-Agent Systems,PREREQUISITE_FOR
+Multi-Agent Systems,AI Agents,PREREQUISITE_FOR
