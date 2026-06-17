@@ -2,6 +2,10 @@ from backend.app.graphrag.neo4j_connection import driver
 from backend.app.services.gemini_service import (
     generate_response
 )
+from backend.app.services.role_service import (
+    get_role_requirements
+)
+
 
 def skill_gap_analysis(known_skills):
 
@@ -59,3 +63,27 @@ def generate_career_roadmap(
     """
 
     return generate_response(prompt)
+
+
+def role_based_gap_analysis(
+    resume_skills,
+    target_role
+):
+
+    required_skills = get_role_requirements(
+        target_role
+    )
+
+    missing_skills = []
+
+    resume_lower = {
+        skill.lower()
+        for skill in resume_skills
+    }
+
+    for skill in required_skills:
+
+        if skill.lower() not in resume_lower:
+            missing_skills.append(skill)
+
+    return missing_skills

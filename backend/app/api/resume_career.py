@@ -8,7 +8,7 @@ from backend.app.services.resume_service import (
 )
 
 from backend.app.services.career_twin_service import (
-    skill_gap_analysis,
+    role_based_gap_analysis,
     generate_career_roadmap
 )   
 
@@ -28,9 +28,10 @@ def resume_career():
         for s in skills_text.split(",")
     ]
 
-    missing_skills = skill_gap_analysis(
-        skills
-    )
+    missing_skills = role_based_gap_analysis(
+    skills,
+    "AI Engineer"
+)
 
     roadmap = generate_career_roadmap(
         skills,

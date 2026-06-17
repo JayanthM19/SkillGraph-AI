@@ -1,0 +1,53 @@
+role,skill
+AI Engineer,Machine Learning
+AI Engineer,Deep Learning
+AI Engineer,Transformers
+AI Engineer,Embeddings
+AI Engineer,RAG
+AI Engineer,LangChain
+AI Engineer,LangGraph
+AI Engineer,Vector Databases
+
+Data Scientist,Statistics
+Data Scientist,EDA
+Data Scientist,Pandas
+Data Scientist,NumPy
+Data Scientist,Machine Learning
+Data Scientist,XGBoost
+Data Scientist,Feature Engineering
+
+Backend Engineer,FastAPI
+Backend Engineer,REST APIs
+Backend Engineer,Database Design
+Backend Engineer,Microservices
+Backend Engineer,Docker
+Backend Engineer,System Design
+Backend Engineer,AWS
+
+MLOps Engineer,Docker
+MLOps Engineer,Kubernetes
+MLOps Engineer,CI/CD
+MLOps Engineer,MLflow
+MLOps Engineer,Cloud Computing
+MLOps Engineer,Model Deployment
+
+Frontend Engineer,HTML
+Frontend Engineer,CSS
+Frontend Engineer,JavaScript
+Frontend Engineer,React
+Frontend Engineer,Next.js
+
+DevOps Engineer,Linux
+DevOps Engineer,Docker
+DevOps Engineer,Kubernetes
+DevOps Engineer,Jenkins
+DevOps Engineer,GitHub Actions
+DevOps Engineer,AWS
+
+IoT Engineer,C
+IoT Engineer,Embedded C
+IoT Engineer,Microcontrollers
+IoT Engineer,Arduino
+IoT Engineer,ESP32
+IoT Engineer,MQTT
+IoT Engineer,Sensors
