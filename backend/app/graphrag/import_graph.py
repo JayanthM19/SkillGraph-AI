@@ -12,7 +12,9 @@ driver = GraphDatabase.driver(
     auth=(NEO4J_USER, NEO4J_PASSWORD)
 )
 
-df = pd.read_csv("datasets/skill_relationships.csv")
+df = pd.read_csv(
+    "datasets/skill_relationships_v2.csv"
+)
 
 with driver.session() as session:
 
