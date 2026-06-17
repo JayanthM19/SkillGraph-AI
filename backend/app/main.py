@@ -12,6 +12,12 @@ from backend.app.api.hybrid import (
     router as hybrid_router
 )
 
+from backend.app.api.resume_career import (
+    router as resume_router
+)
+
+
+
 app = FastAPI(
     title="SkillGraph AI",
     description="Agentic GraphRAG Career Intelligence Platform",
@@ -22,6 +28,7 @@ app.include_router(search_router)
 app.include_router(graph_router)
 app.include_router(hybrid_router)
 app.include_router(career_router)
+app.include_router(resume_router)
 
 @app.get("/")
 def home():
