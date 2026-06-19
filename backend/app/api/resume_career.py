@@ -1,4 +1,7 @@
 from fastapi import APIRouter
+from backend.app.models.resume_models import (
+    ResumeCareerRequest
+)
 
 router = APIRouter()
 
@@ -12,8 +15,10 @@ from backend.app.services.career_twin_service import (
     generate_career_roadmap
 )   
 
-@router.get("/resume-career")
-def resume_career():
+@router.post("/resume-career")
+def resume_career(
+    request: ResumeCareerRequest
+):
 
     text = extract_resume_text(
         "datasets/resumes/sample_resume.pdf"
@@ -30,14 +35,14 @@ def resume_career():
 
     missing_skills = role_based_gap_analysis(
     skills,
-    "AI Engineer"
+    request.target_role
 )
 
     roadmap = generate_career_roadmap(
         skills,
-        "AI Engineer",
+        request.target_role,
         missing_skills
-    )
+)
 
     return {
         "extracted_skills": skills,
