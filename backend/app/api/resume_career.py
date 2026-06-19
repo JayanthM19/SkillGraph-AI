@@ -2,6 +2,9 @@ from fastapi import APIRouter
 from backend.app.models.resume_models import (
     ResumeCareerRequest
 )
+from backend.app.services.learning_path_service import (
+    get_learning_path
+)
 
 router = APIRouter()
 
@@ -37,6 +40,17 @@ def resume_career(
     skills,
     request.target_role
 )
+    learning_paths = {}
+
+    for skill in missing_skills:
+
+        try:
+            learning_paths[skill] = (
+                get_learning_path(skill)
+            )
+
+        except Exception:
+            learning_paths[skill] = [skill]
 
     roadmap = generate_career_roadmap(
         skills,
@@ -45,7 +59,8 @@ def resume_career(
 )
 
     return {
-        "extracted_skills": skills,
-        "missing_skills": missing_skills,
-        "roadmap": roadmap
-    }
+    "extracted_skills": skills,
+    "missing_skills": missing_skills,
+    "learning_paths": learning_paths,
+    "roadmap": roadmap
+}
