@@ -1,4 +1,10 @@
 from fastapi import APIRouter
+from fastapi import (
+    APIRouter,
+    UploadFile,
+    File,
+    Form
+)
 from backend.app.models.resume_models import (
     ResumeCareerRequest
 )
@@ -7,6 +13,9 @@ from backend.app.services.learning_path_service import (
 )
 from backend.app.services.roadmap_service import (
     build_unified_roadmap
+)
+from backend.app.services.file_service import (
+    save_uploaded_file
 )
 
 
@@ -24,12 +33,15 @@ from backend.app.services.career_twin_service import (
 
 @router.post("/resume-career")
 def resume_career(
-    request: ResumeCareerRequest
+    file: UploadFile = File(...),
+    target_role: str = Form(...)
 ):
-
+    file_path = save_uploaded_file(
+    file
+)
     text = extract_resume_text(
-        "datasets/resumes/sample_resume.pdf"
-    )
+    file_path
+)
 
     skills_text = extract_skills_from_resume(
         text
@@ -42,7 +54,7 @@ def resume_career(
 
     missing_skills = role_based_gap_analysis(
     skills,
-    request.target_role
+    target_role
 )
     learning_paths = {}
 
@@ -62,7 +74,7 @@ def resume_career(
     
     roadmap = generate_career_roadmap(
         skills,
-        request.target_role,
+        target_role,
         missing_skills
 )
 
