@@ -5,6 +5,10 @@ from backend.app.models.resume_models import (
 from backend.app.services.learning_path_service import (
     get_learning_path
 )
+from backend.app.services.roadmap_service import (
+    build_unified_roadmap
+)
+
 
 router = APIRouter()
 
@@ -52,6 +56,10 @@ def resume_career(
         except Exception:
             learning_paths[skill] = [skill]
 
+    unified_roadmap = build_unified_roadmap(
+    learning_paths
+)
+    
     roadmap = generate_career_roadmap(
         skills,
         request.target_role,
@@ -62,5 +70,6 @@ def resume_career(
     "extracted_skills": skills,
     "missing_skills": missing_skills,
     "learning_paths": learning_paths,
+    "unified_roadmap": unified_roadmap,
     "roadmap": roadmap
 }
