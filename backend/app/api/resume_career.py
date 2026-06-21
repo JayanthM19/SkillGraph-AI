@@ -17,6 +17,9 @@ from backend.app.services.roadmap_service import (
 from backend.app.services.file_service import (
     save_uploaded_file
 )
+from backend.app.services.resource_service import (
+    get_resources
+)
 
 
 router = APIRouter()
@@ -47,6 +50,11 @@ def resume_career(
         text
     )
 
+    if not skills_text:
+        return {
+        "error": "Unable to extract skills. Gemini quota exceeded."
+    }
+        
     skills = [
         s.strip()
         for s in skills_text.split(",")
@@ -68,6 +76,14 @@ def resume_career(
         except Exception:
             learning_paths[skill] = [skill]
 
+    
+    resources = {}
+
+    for skill in missing_skills:
+
+        resources[skill] = get_resources(
+        skill
+    )
     unified_roadmap = build_unified_roadmap(
     learning_paths
 )
@@ -82,6 +98,7 @@ def resume_career(
     "extracted_skills": skills,
     "missing_skills": missing_skills,
     "learning_paths": learning_paths,
+    "resources": resources,
     "unified_roadmap": unified_roadmap,
     "roadmap": roadmap
 }

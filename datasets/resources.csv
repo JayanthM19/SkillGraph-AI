@@ -1,0 +1,67 @@
+skill,docs,course,project
+Python,https://docs.python.org/3/,Python for Everybody,Build Personal Finance Tracker
+NumPy,https://numpy.org/doc/,NumPy Essentials,Data Analysis Toolkit
+Pandas,https://pandas.pydata.org/docs/,Pandas for Data Analysis,Sales Data Dashboard
+Matplotlib,https://matplotlib.org/stable/,Data Visualization with Python,Analytics Dashboard
+Seaborn,https://seaborn.pydata.org/,Python Data Visualization,EDA Project
+Statistics,https://www.khanacademy.org/math/statistics-probability,Statistics for Data Science,Customer Insights Analysis
+Probability,https://www.khanacademy.org/math/statistics-probability/probability-library,Probability for ML,Recommendation System
+EDA,https://scikit-learn.org/stable/,Exploratory Data Analysis,Dataset Profiling Tool
+Machine Learning,https://scikit-learn.org/stable/,Machine Learning Specialization,House Price Prediction
+Deep Learning,https://www.deeplearning.ai/,Deep Learning Specialization,Image Classification System
+Neural Networks,https://www.tensorflow.org/guide,Neural Networks from Scratch,Digit Recognition App
+CNN,https://www.tensorflow.org/tutorials/images/cnn,CNN for Computer Vision,Plant Disease Detection
+RNN,https://www.tensorflow.org/guide/keras/rnn,RNN Fundamentals,Text Generator
+LSTM,https://www.tensorflow.org/guide/keras/rnn,LSTM Networks,Stock Prediction System
+NLP,https://huggingface.co/docs,NLP Specialization,Sentiment Analysis Tool
+Transformers,https://huggingface.co/docs/transformers,Transformers for NLP,Q&A Chatbot
+Embeddings,https://platform.openai.com/docs/guides/embeddings,Embeddings Explained,Semantic Search Engine
+Vector Databases,https://docs.trychroma.com/,Vector Database Fundamentals,Document Retrieval System
+RAG,https://python.langchain.com/docs,RAG Applications,RAG Chatbot
+LangChain,https://python.langchain.com/docs,LangChain Crash Course,Multi-PDF Chatbot
+LangGraph,https://langchain-ai.github.io/langgraph/,LangGraph Fundamentals,Multi-Agent Research Assistant
+TensorFlow,https://www.tensorflow.org/,TensorFlow Developer,Image Classification Pipeline
+PyTorch,https://pytorch.org/docs/,PyTorch for Deep Learning,Object Detection Model
+Scikit-Learn,https://scikit-learn.org/stable/,Machine Learning with Scikit-Learn,Customer Churn Prediction
+XGBoost,https://xgboost.readthedocs.io/,XGBoost Mastery,Credit Risk Prediction
+MLOps,https://mlflow.org/docs/latest/index.html,MLOps Fundamentals,ML Deployment Pipeline
+Model Deployment,https://fastapi.tiangolo.com/,ML Deployment with FastAPI,Deploy ML API
+SQL,https://www.w3schools.com/sql/,SQL for Data Analysis,Library Management System
+Database Design,https://www.postgresql.org/docs/,Database Design Fundamentals,Inventory Database
+PostgreSQL,https://www.postgresql.org/docs/,PostgreSQL Bootcamp,E-Commerce Database
+MySQL,https://dev.mysql.com/doc/,MySQL Essentials,Student Management System
+Java,https://docs.oracle.com/en/java/,Java Programming Masterclass,Banking Application
+Spring Boot,https://spring.io/projects/spring-boot,Spring Boot for Beginners,E-Commerce Backend
+Backend Development,https://roadmap.sh/backend,Backend Developer Roadmap,REST API Platform
+REST APIs,https://fastapi.tiangolo.com/,REST API Design,Task Manager API
+Microservices,https://microservices.io/,Microservices Architecture,Distributed Order System
+System Design,https://github.com/donnemartin/system-design-primer,System Design Fundamentals,URL Shortener
+FastAPI,https://fastapi.tiangolo.com/,FastAPI Crash Course,AI Backend Service
+Node.js,https://nodejs.org/en/docs,Node.js Complete Guide,Chat Application Backend
+Express.js,https://expressjs.com/,Express.js Fundamentals,Blog API
+GraphQL,https://graphql.org/learn/,GraphQL Basics,Social Media Backend
+HTML,https://developer.mozilla.org/en-US/docs/Web/HTML,HTML Fundamentals,Portfolio Website
+CSS,https://developer.mozilla.org/en-US/docs/Web/CSS,CSS Fundamentals,Responsive Landing Page
+JavaScript,https://developer.mozilla.org/en-US/docs/Web/JavaScript,JavaScript Essentials,Interactive Dashboard
+TypeScript,https://www.typescriptlang.org/docs/,TypeScript Complete Guide,Large Scale Web App
+React,https://react.dev/,React Complete Guide,AI Dashboard Frontend
+Next.js,https://nextjs.org/docs,Next.js Mastery,Full Stack AI Platform
+Redux,https://redux.js.org/,Redux Essentials,E-Commerce Frontend
+Linux,https://linuxjourney.com/,Linux Fundamentals,System Administration Lab
+Docker,https://docs.docker.com/,Docker for Beginners,Containerize a FastAPI Application
+Kubernetes,https://kubernetes.io/docs/,Kubernetes Fundamentals,Deploy Microservices Cluster
+Jenkins,https://www.jenkins.io/doc/,Jenkins CI/CD Pipeline,Automated Deployment System
+GitHub Actions,https://docs.github.com/actions,GitHub Actions CI/CD,Automated Testing Pipeline
+Terraform,https://developer.hashicorp.com/terraform/docs,Terraform Associate,Infrastructure Automation
+AWS,https://docs.aws.amazon.com/,AWS Cloud Practitioner,Deploy FastAPI on AWS EC2
+Azure,https://learn.microsoft.com/azure/,Azure Fundamentals,Cloud Resource Manager
+GCP,https://cloud.google.com/docs,GCP Fundamentals,Serverless AI API
+Kafka,https://kafka.apache.org/documentation/,Apache Kafka Essentials,Real-Time Analytics Pipeline
+Spark,https://spark.apache.org/docs/latest/,Apache Spark Fundamentals,Big Data Processing System
+Airflow,https://airflow.apache.org/docs/,Airflow for Data Engineering,ETL Orchestration Platform
+Data Engineering,https://roadmap.sh/data-engineer,Data Engineering Roadmap,Data Pipeline Project
+Cybersecurity,https://owasp.org/,Cybersecurity Fundamentals,Vulnerability Scanner
+Network Security,https://owasp.org/,Network Security Basics,Security Audit Tool
+Penetration Testing,https://www.kali.org/docs/,Ethical Hacking Fundamentals,Web Security Assessment
+Git,https://git-scm.com/doc,Git Essentials,Collaborative Development Workflow
+GitHub,https://docs.github.com/,GitHub Mastery,Open Source Contribution Tracker

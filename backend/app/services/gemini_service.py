@@ -20,4 +20,4 @@ def generate_response(prompt):
         return response.text
 
     except Exception as e:
-        return f"Gemini Error: {str(e)}"
+        return ""
