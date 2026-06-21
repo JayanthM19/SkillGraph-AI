@@ -23,6 +23,9 @@ from backend.app.services.resource_service import (
 from backend.app.services.career_simulator_service import (
     calculate_role_readiness
 )
+from backend.app.services.future_simulator_service import (
+    simulate_future_readiness
+)
 
 
 router = APIRouter()
@@ -72,6 +75,12 @@ def resume_career(
     target_role
 )
     
+    future_simulation = simulate_future_readiness(
+    skills,
+    missing_skills,
+    target_role
+)
+    
     learning_paths = {}
 
     for skill in missing_skills:
@@ -106,6 +115,7 @@ def resume_career(
     "extracted_skills": skills,
     "missing_skills": missing_skills,
     "career_readiness": readiness_score,
+    "future_simulation": future_simulation,
     "learning_paths": learning_paths,
     "resources": resources,
     "unified_roadmap": unified_roadmap,
