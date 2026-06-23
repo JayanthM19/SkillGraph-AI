@@ -1,0 +1,13 @@
+project_name,skills
+Multi-PDF RAG Chatbot,"RAG,Embeddings,Vector Databases,LangChain"
+AI Research Assistant,"LangGraph,RAG,Transformers"
+Resume Analyzer,"NLP,Transformers,Embeddings"
+AI Career Advisor,"LangChain,RAG,Vector Databases"
+Plant Disease Detection,"CNN,TensorFlow,Computer Vision"
+Customer Churn Prediction,"Machine Learning,XGBoost,Pandas"
+Stock Prediction System,"LSTM,Deep Learning,Time Series"
+E-Commerce Backend,"Spring Boot,REST APIs,Database Design"
+Task Manager API,"FastAPI,REST APIs,PostgreSQL"
+Microservices Order Platform,"Microservices,Docker,Kubernetes"
+CI CD Pipeline,"Docker,Jenkins,GitHub Actions"
+Cloud Deployment Platform,"AWS,Docker,Linux"

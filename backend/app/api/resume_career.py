@@ -26,6 +26,9 @@ from backend.app.services.career_simulator_service import (
 from backend.app.services.future_simulator_service import (
     simulate_future_readiness
 )
+from backend.app.services.project_service import (
+    recommend_projects
+)
 
 
 router = APIRouter()
@@ -81,6 +84,10 @@ def resume_career(
     target_role
 )
     
+    recommended_projects = recommend_projects(
+    missing_skills
+)
+    
     learning_paths = {}
 
     for skill in missing_skills:
@@ -118,6 +125,7 @@ def resume_career(
     "future_simulation": future_simulation,
     "learning_paths": learning_paths,
     "resources": resources,
+    "recommended_projects": recommended_projects,
     "unified_roadmap": unified_roadmap,
     "roadmap": roadmap
 }
