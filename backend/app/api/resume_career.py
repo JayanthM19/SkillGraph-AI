@@ -29,6 +29,9 @@ from backend.app.services.future_simulator_service import (
 from backend.app.services.project_service import (
     recommend_projects
 )
+from backend.app.services.multi_role_service import (
+    get_role_rankings
+)
 
 
 router = APIRouter()
@@ -83,6 +86,10 @@ def resume_career(
     missing_skills,
     target_role
 )
+    role_rankings = get_role_rankings(
+    skills
+)
+    
     
     recommended_projects = recommend_projects(
     missing_skills
@@ -123,6 +130,7 @@ def resume_career(
     "missing_skills": missing_skills,
     "career_readiness": readiness_score,
     "future_simulation": future_simulation,
+    "role_rankings": role_rankings,
     "learning_paths": learning_paths,
     "resources": resources,
     "recommended_projects": recommended_projects,
