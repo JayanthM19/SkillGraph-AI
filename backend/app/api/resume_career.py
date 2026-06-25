@@ -32,6 +32,14 @@ from backend.app.services.project_service import (
 from backend.app.services.multi_role_service import (
     get_role_rankings
 )
+from backend.app.services.graph_visualization_service import (
+    roadmap_to_reactflow_graph
+)
+from backend.app.services.milestone_service import (
+    get_milestones
+)
+
+
 
 
 router = APIRouter()
@@ -45,6 +53,10 @@ from backend.app.services.career_twin_service import (
     role_based_gap_analysis,
     generate_career_roadmap
 )   
+from backend.app.services.graph_visualization_service import (
+    roadmap_to_graph
+)
+
 
 @router.post("/resume-career")
 def resume_career(
@@ -119,6 +131,14 @@ def resume_career(
     learning_paths
 )
     
+    roadmap_graph = roadmap_to_reactflow_graph(
+    unified_roadmap,
+    skills
+)
+    milestones = get_milestones(
+    unified_roadmap
+)
+    
     roadmap = generate_career_roadmap(
         skills,
         target_role,
@@ -135,5 +155,7 @@ def resume_career(
     "resources": resources,
     "recommended_projects": recommended_projects,
     "unified_roadmap": unified_roadmap,
+    "roadmap_graph": roadmap_graph,
+    "milestones": milestones,
     "roadmap": roadmap
 }

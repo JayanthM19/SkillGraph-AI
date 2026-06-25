@@ -1,0 +1,11 @@
+{
+    "Python": "Complete 20 Python coding exercises and build one CLI application.",
+    "NumPy": "Implement array operations, broadcasting, and matrix multiplication.",
+    "Pandas": "Analyze a CSV dataset and perform cleaning and visualization.",
+    "Machine Learning": "Train Logistic Regression, Decision Tree, and Random Forest models.",
+    "Deep Learning": "Build an image classifier using TensorFlow.",
+    "Transformers": "Fine-tune a Hugging Face transformer on a text classification task.",
+    "RAG": "Build a Retrieval-Augmented Generation chatbot using LangChain.",
+    "Docker": "Containerize a FastAPI application.",
+    "FastAPI": "Develop and deploy a REST API with CRUD operations."
+}
