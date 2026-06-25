@@ -144,18 +144,54 @@ def resume_career(
         target_role,
         missing_skills
 )
+    
+    analysis = {
 
-    return {
     "extracted_skills": skills,
+
     "missing_skills": missing_skills,
+
     "career_readiness": readiness_score,
+
     "future_simulation": future_simulation,
-    "role_rankings": role_rankings,
+
+    "role_rankings": role_rankings
+}
+    
+    roadmap_section = {
+
     "learning_paths": learning_paths,
-    "resources": resources,
-    "recommended_projects": recommended_projects,
+
     "unified_roadmap": unified_roadmap,
+
     "roadmap_graph": roadmap_graph,
-    "milestones": milestones,
+
+    "milestones": milestones
+}
+    
+    recommendations = {
+
+    "resources": resources,
+
+    "projects": recommended_projects
+}
+    
+    career = {
+
+    "target_role": target_role,
+
     "roadmap": roadmap
 }
+    return {
+
+    "analysis": analysis,
+
+    "career": career,
+
+    "roadmap": roadmap_section,
+
+    "recommendations": recommendations
+
+}
+
+    
