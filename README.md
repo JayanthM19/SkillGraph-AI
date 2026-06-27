@@ -459,7 +459,7 @@ Health check endpoint.
 ## Clone
 
 ```bash
-git clone https://github.com/<username>/SkillGraph-AI.git
+git clone https://github.com/JayanthM19/SkillGraph-AI.git
 
 cd SkillGraph-AI
 ```
