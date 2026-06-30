@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from backend.app.api.search import router as search_router
 from backend.app.api.graph_api import router as graph_api_router
 from backend.app.api.graph import (
@@ -23,6 +24,15 @@ app = FastAPI(
     title="SkillGraph AI",
     description="Agentic GraphRAG Career Intelligence Platform",
     version="1.0.0"
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.include_router(search_router)

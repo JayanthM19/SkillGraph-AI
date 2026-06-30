@@ -5,6 +5,7 @@ from fastapi import (
     File,
     Form
 )
+from datetime import datetime
 from backend.app.models.resume_models import (
     ResumeCareerRequest
 )
@@ -182,7 +183,18 @@ def resume_career(
 
     "roadmap": roadmap
 }
+    metadata = {
+
+    "generated_at": datetime.now().isoformat(),
+
+    "version": "1.0",
+
+    "engine": "SkillGraph AI"
+
+}
     return {
+
+    "metadata": metadata,
 
     "analysis": analysis,
 
